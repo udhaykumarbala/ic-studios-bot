@@ -1,0 +1,284 @@
+IC Studios - Complete Project Data, Paths, and Content
+====================================================
+
+1. Home Page (/)
+---------------
+Path: src/app/page.tsx
+Content:
+- Hero Section
+- Released Comics Section
+- Upcoming Comics Section
+- Merchandise Section
+- Collaboration Banner
+- Footer
+
+2. About Page (/about)
+--------------------
+Path: src/app/(pages)/about/page.tsx
+Content:
+A. About Us Section
+   - Title: "About Us"
+   - Description: 
+     * "At IC Studios, we believe that art is real freedom – a universal language that transcends boundaries..."
+     * "Our creative journey spans multiple mediums, allowing us to bring stories to life in their most authentic form..."
+   - Image: "/Images/img.png"
+
+B. Vision Section
+   - Title: "Our Vision"
+   - Description:
+     * "We envision a world where stories serve as bridges between cultures, perspectives, and experiences."
+     * "Our commitment to diverse storytelling reflects our belief that art has the unique power to unite people..."
+   - Image: "/Images/img.png"
+
+C. What Sets Us Apart Section
+   - Title: "What Sets Us Apart..."
+   - Description:
+     * "Our integrated approach to entertainment allows stories to flow naturally between different mediums..."
+     * "We're not just creating entertainment – we're crafting experiences that inspire, challenge, and connect people..."
+   - Image: "/Images/img.png"
+   - Gradient: true
+
+D. Leadership Section
+E. Collaboration Banner
+F. Footer
+
+3. Projects Page (/projects)
+--------------------------
+Path: src/app/(pages)/projects/page.tsx
+Content:
+- Hero Section
+- Comic Series Sections (3 sections)
+  * Each section displays comics with:
+    - Title: "Comic Series Name"
+    - Card Data from releasedComics
+    - Items to show: 2-3 per section
+- Collaboration Banner
+- Footer
+
+4. Collaboration Page (/collaboration)
+-----------------------------------
+Path: src/app/(pages)/collaboration/page.tsx
+Content:
+- Collaboration Component
+- Synopsis Section
+  * Header: "Choose your path from the below and apply now"
+  * Subheader: "We offer multiple paths for collaboration, allowing creative professionals to engage with us..."
+  * Collaboration Opportunities:
+    1. Work on Original Projects
+    2. Pitch Original Stories
+    3. In-house Development Program
+- Footer
+
+5. Data Details
+--------------
+A. Footer Data (src/data/footer.ts)
+---------------------------------
+- Title: "IC Studios"
+- Subtitle: "We make it happen — IC Comics awaits you!"
+- Social Links:
+  * Instagram (#)
+  * Twitter (#)
+  * Facebook (#)
+  * Discord (#)
+- Footer Links:
+  * About Us (#)
+  * Privacy Policy (#)
+  * Terms of Use (#)
+  * Sales and Refunds (#)
+- Copyright: "© IC Studios. All Rights Reserved"
+
+B. Merchandise Data (src/data/merchandise.ts)
+-------------------------------------------
+1. T-Shirt
+   - ID: 1
+   - Cover Image: "/Images/Frame 22.png"
+
+2. Poster
+   - ID: 2
+   - Cover Image: "/Images/img2.png"
+
+3. Epic Mug
+   - ID: 3
+   - Cover Image: "/Images/img3.png"
+
+4. Sticker Pack
+   - ID: 4
+   - Cover Image: "/Images/img4.png"
+
+C. Comic Details (src/data/detailsPage.ts)
+---------------------------------------
+1. HOT BLOOD
+   - ID: 1
+   - Synopsis:
+     * "How HOT is your blood?, HE asks!"
+     * "The protagonist, Javier shows grit and action to overcome the strongest villain..."
+     * "Javier thinks so. So does his team! But will HE, RAMON REY, an all-knowing DEMI-GOD..."
+     * "Read this action-packed, adventure thriller to witness an impossible fight..."
+   - Cover Image: "/Images/img.png"
+   - Status: New
+   - Genre: "Action, Adventure, Thriller"
+   - Writer: "Sundaramurthy Murugan"
+   - Illustrator: "Unnikrishnan V.S and Rithun Volga"
+   - Price: $4.99
+   - Additional Details:
+     * Colorist: Unnikrishnan V.S and Rithun Volga
+     * Editor: Sundaramurthy Murugan
+     * Format: Comic
+     * Page Count: 31
+     * Rating: M
+     * Synopsis Code: ICA110
+     * Release Date: June, 2025
+
+2. GINGERFACE
+   - ID: 2
+   - Synopsis:
+     * "As long as he breathes, Jay will continue to entertain people..."
+     * "Maybe it means something more than we think?"
+     * "GINGERFACE - A story of belief PUSHED to the edge. HARD."
+   - Cover Image: "/Images/img.png"
+   - Status: New
+   - Genre: "Comedy, Drama, Adventure"
+   - Writer: "Sundaramurthy Murugan"
+   - Illustrator: "Richard Barker"
+   - Price: $14.25
+   - Additional Details:
+     * Colorist: Richard Barker
+     * Editor: Sundaramurthy Murugan
+     * Format: Graphic Novel
+     * Page Count: 90+ (Estimated)
+     * Rating: ALL AGES
+     * Synopsis Code: ICA011
+     * Release Date: SUMMER 2025 (UK)
+
+D. IC Vault Data (src/data/ic-vault.ts)
+-------------------------------------
+1. Welcome Section
+   - Title: "Welcome to IC Studios' creative vault."
+   - Tagline: "Here you'll find our collection of original story concepts..."
+   - Image: "/Images/heroImg.jpg"
+
+2. About Opportunity
+   - Title: "About This Opportunity"
+   - Description: "These story concepts and creative projects are open to artists worldwide..."
+   - Cover Image: "/Images/img.png"
+
+3. Explore Ideas
+   - Title: "Explore Our Ideas"
+   - Description: "Browse through our curated collection of original stories below..."
+   - Cover Image: "/Images/img.png"
+
+4. Story Concepts:
+   a. Beyond the Ring (ICA101)
+      - Synopsis: "A seemingly emotionless, undefeated boxing champion experiences..."
+      - Extended Synopsis available
+      - CTA: "Read Full Synopsis"
+
+   b. Voice of the People (ICA111)
+      - Synopsis: "When an ordinary idealistic man dreams of leading his nation..."
+      - Extended Synopsis available
+      - CTA: "Read Full Synopsis"
+
+   c. Swords at Dawn (ICB000)
+      - Synopsis: "When his wife falls for her abductor, a prideful king's violent quest..."
+      - Extended Synopsis available
+      - CTA: "Read Full Synopsis"
+
+6. Navigation Structure
+---------------------
+Path: src/data/navbar_items.ts
+Menu Items:
+- Projects (/projects)
+- Upcoming (/upcoming)
+- IC Vault (/ic-vault)
+- Collaborate (/collaboration)
+- Merchandise (/merchandise)
+- About Us (/about)
+
+7. Collaboration Data
+--------------------
+Path: src/data/collaboration.ts
+Content:
+A. Collaboration Banner:
+   - Title: "Collaborate with Us"
+   - Tagline: "We believe that exceptional talent knows no borders."
+   - Image: "/Images/Banner/BannerImg_1.jpeg"
+
+B. Collaboration Opportunities:
+   1. Work on Original Projects
+      - Synopsis: "Join our creative team as a contract professional"
+      - CTA: "Apply Now"
+   
+   2. Pitch Original Stories
+      - Synopsis: "Have a compelling story to tell"
+      - CTA: "Apply Now"
+   
+   3. In-house Development Program
+      - Synopsis: "Use our in-house ideas to grow your skills"
+      - CTA: "Apply Now"
+
+8. Project Structure
+-------------------
+Pages:
+- / (Home)
+- /about
+- /collaboration
+- /comicDetails
+- /ic-vault
+- /merchandise
+- /projects
+- /upcoming
+
+Components:
+- synopsisCard/ (Path: src/components/synopsisCard/)
+- ui/ (Path: src/components/ui/)
+- upcoming-comics/ (Path: src/components/upcoming-comics/)
+- layout/ (Path: src/components/layout/)
+- merchandise/ (Path: src/components/merchandise/)
+- modal/ (Path: src/components/modal/)
+- navbar/ (Path: src/components/navbar/)
+- section-title/ (Path: src/components/section-title/)
+- slider-button/ (Path: src/components/slider-button/)
+- comic-section/ (Path: src/components/comic-section/)
+- detailsPage/ (Path: src/components/detailsPage/)
+- footer/ (Path: src/components/footer/)
+- header/ (Path: src/components/header/)
+- heroSection/ (Path: src/components/heroSection/)
+- collaboration/ (Path: src/components/collaboration/)
+- comic-card/ (Path: src/components/comic-card/)
+- aboutPage/ (Path: src/components/aboutPage/)
+
+9. Data Files
+------------
+- navbar_items.ts (Path: src/data/navbar_items.ts)
+- collaboration.ts (Path: src/data/collaboration.ts)
+- detailsPage.ts (Path: src/data/detailsPage.ts)
+- footer.ts (Path: src/data/footer.ts)
+- heroSection.ts (Path: src/data/heroSection.ts)
+- ic-vault.ts (Path: src/data/ic-vault.ts)
+- cardData.ts (Path: src/data/cardData.ts)
+- merchandise.ts (Path: src/data/merchandise.ts)
+- aboutPage.ts (Path: src/data/aboutPage.ts)
+
+10. Utility Functions
+-------------------
+- getComicById.ts (Path: src/utils/getComicById.ts)
+- localStorage.ts (Path: src/utils/localStorage.ts)
+- font.js (Path: src/utils/font.js)
+
+11. Configuration Files
+---------------------
+- tailwind.config.ts (Root)
+- .eslintrc.cjs (Root)
+- package.json (Root)
+- tsconfig.json (Root)
+- next.config.ts (Root)
+- postcss.config.mjs (Root)
+- .prettierrc.cjs (Root)
+- components.json (Root)
+
+12. Public Assets
+---------------
+- favicon.ico (Path: public/favicon.ico)
+- globals.css (Path: src/app/globals.css)
+
+Note: This document provides a comprehensive overview of the project structure, data, and content. Each component and data file may contain additional implementation details not shown here. 
