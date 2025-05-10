@@ -9,6 +9,7 @@ A Flask-based chat application using Google's Gemini AI to provide an interactiv
 - Real-time typing indicators
 - Docker support for easy deployment
 - Modern, comic-themed UI
+- Configurable CORS support
 
 ## Setup
 
@@ -18,6 +19,7 @@ A Flask-based chat application using Google's Gemini AI to provide an interactiv
 2. Create a `.env` file in the project root:
 ```bash
 GOOGLE_API_KEY=your_google_api_key_here
+ALLOWED_ORIGINS=http://localhost:3000,https://yourdomain.com
 ```
 3. Run the application:
 ```bash
@@ -35,12 +37,26 @@ pip install -r requirements.txt
 2. Set up your environment variables:
 ```bash
 export GOOGLE_API_KEY=your_google_api_key_here
+export ALLOWED_ORIGINS=http://localhost:3000,https://yourdomain.com
 ```
 
 3. Run the Flask application:
 ```bash
 python app.py
 ```
+
+## CORS Configuration
+
+The application supports configurable CORS settings through the `ALLOWED_ORIGINS` environment variable:
+
+- Default: `*` (allows all origins)
+- Specific origins: Comma-separated list of allowed origins
+  Example: `http://localhost:3000,https://yourdomain.com`
+
+CORS is configured to allow:
+- GET, POST, and OPTIONS methods
+- Content-Type and Authorization headers
+- Credentials (if needed)
 
 ## API Usage
 

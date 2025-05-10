@@ -4,11 +4,23 @@ from dotenv import load_dotenv
 import os
 from system_prompt import SYSTEM_PROMPT
 from collections import deque
+from flask_cors import CORS
 
 # Load environment variables
 load_dotenv()
 
 app = Flask(__name__)
+
+# Configure CORS
+# Get allowed origins from environment variable, default to wildcard
+allowed_origins = os.getenv('ALLOWED_ORIGINS', '*').split(',')
+CORS(app, resources={
+    r"/*": {
+        "origins": allowed_origins,
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
+    }
+})
 
 # Configure Gemini
 GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
