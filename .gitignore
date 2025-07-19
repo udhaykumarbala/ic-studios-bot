@@ -1,4 +1,20 @@
-# Python
+# Cloudflare Workers
+.wrangler/
+dist/
+worker-configuration.d.ts
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.production.local
+
+# Python (existing Flask app)
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,56 +36,13 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-env/
-ENV/
-.env
-.venv
-env.bak/
-venv.bak/
-
 # IDE
-.idea/
 .vscode/
+.idea/
 *.swp
 *.swo
-.DS_Store
-.project
-.pydevproject
-.settings/
 
-# Docker
-.docker/
-docker-compose.override.yml
-
-# Logs
-*.log
-logs/
-log/
-
-# Local development
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Testing
-.coverage
-htmlcov/
-.pytest_cache/
-.tox/
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-
-# Distribution
-*.tar.gz
-*.zip
-*.rar
-
-# System Files
+# OS
 .DS_Store
 Thumbs.db 
  

@@ -1,0 +1,12 @@
+name = "ic-studios-bot"
+main = "src/index.js"
+compatibility_date = "2024-12-09"
+
+[env.production.vars]
+GOOGLE_API_KEY = ""
+ALLOWED_ORIGINS = "*"
+
+[[env.production.kv_namespaces]]
+binding = "SESSIONS"
+id = ""
+preview_id = "" 
